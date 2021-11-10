@@ -1,0 +1,137 @@
+---
+layout: base
+---
+
+{% include header.html type="page" %}
+
+
+  <!-- Load the JS file -->
+  <script src="https://cdn.jsdelivr.net/npm/@gitgraph/js"></script>
+    <div class=" container-md ">
+  {{ content }}
+
+  <button class="btn btn-success btn-lg get-started-btn" onclick="next()">Próximo evento</button>
+  <p class="box-note"><strong>Evento Nexus:</strong> <span id="evento-span"></span></p>
+  <div id="graph-container"></div>
+</div>
+  <!-- Use the `GitgraphJS` global variable to create your graph -->
+  <script>
+
+  var branchesOrder = ['Recuperar joias 4', 'Recuperar joias 2', 'Linha do tempo sagrada', 'Recuperar joias', 'Recuperar joias 3'];
+      var compareBranchesOrder = function(a, b) {
+        return branchesOrder.indexOf(a) - branchesOrder.indexOf(b);
+      };
+  var count = 0;
+  
+    const graphContainer = document.getElementById("graph-container");
+    const eventoSpan = document.getElementById("evento-span");
+
+        // Instantiate the graph.
+        const gitgraph = GitgraphJS.createGitgraph(graphContainer, {
+            author: 'Uatu <uatu@marvel.com>',
+            compareBranchesOrder: compareBranchesOrder,
+        });
+    //gitgraph.author("Teste");
+
+    // Simulate git commands with Gitgraph API.
+    //const master = gitgraph.branch("master");
+    
+    //master.commit("Initial commit", "Teste");
+
+    //const develop = master.branch("develop");
+    //develop.commit("Add TypeScript");
+    
+    //const aFeature = develop.branch("a-feature");
+    //aFeature
+      //.commit("Make it work")
+      //.commit("Make it right")
+      //.commit("Make it fast");
+
+    //develop.merge(aFeature);
+    //develop.commit("Prepare v1");
+    //master.merge(develop).tag("v1.0.0");
+    var events = JSON.parse('{{ site.data.events | jsonify }}');
+    //console.log(events);
+    events[0].b = gitgraph.branch(events[0].title);
+    count++;
+    function build(id){
+        if(events[id].eventType=='commit'){
+            events[events[id].branchFrom].b.commit({
+                subject: events[id].title
+            });
+        }
+        else if(events[id].eventType=='branch'){
+            console.log(events[id]);
+            events[id].b = events[events[id].branchFrom].b.branch({
+                name: events[id].title,
+                parentCommit: events[events[id].commitFrom].c,
+                style: {
+                    color: events[id].color
+                },
+                commitDefaultOptions: {
+                    style: {
+                        color: events[id].color,
+                    message: {
+                        color: events[id].color
+                    },
+                    dot: {
+                        color: events[id].color
+                    }
+                    }
+                }
+            });
+            console.log(events[events[id].commitFrom].c);
+            events[id].b.commit('Nova ramificação');
+        }
+        else if(events[id].eventType=='merge'){
+            events[id].b = events[0].b.merge(events[events[id].branchFrom].b);
+            events[0].b.commit('Ramo podado');
+        }
+    }
+    function compare( a, b ) {
+  if ( a.order < b.order ){
+    return -1;
+  }
+  if ( a.order > b.order ){
+    return 1;
+  }
+  return 0;
+}
+console.log(events);
+function next() {
+    if(count<=events.length){
+        console.log(count);
+        eventoSpan.innerHTML=events[count].subtitle;
+        subarray = events.slice(1, count+1);
+        subarray.sort(compare);
+        // Get the graph container HTML element.
+        gitgraph.clear();
+        events[0].b = gitgraph.branch({
+            name: events[0].title,
+            style: {
+                color: events[0].color
+            },
+            commitDefaultOptions: {
+                style: {
+                    color: events[0].color,
+                message: {
+                    color: events[0].color
+                },
+                dot: {
+                    color: events[0].color
+                }
+                }
+            }
+        });
+        events[0].b.commit('Origem');
+        subarray.forEach(function(valor, chave){
+            build(valor.id);
+        });
+        
+        count++;
+    }
+   
+   
+}
+    
+  </script>

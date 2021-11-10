@@ -1,0 +1,155 @@
+[
+    {
+        "id":0,
+        "eventType": "branch",
+        "color": "#FF0000",
+        "title": "Linha do tempo sagrada",
+        "subtitle": "Nova ramificação",
+        "commit":"",
+        "branchFrom": null,
+        "order": 0
+    },
+    {
+        "id":1,
+        "eventType": "commit",
+       "title":"Big Bang – 1939",
+       "subtitle":"Surgimento das pedras do infinito, Vibraniun na Terra",
+       "description":"Criação das seis singularidades pelas entidades cosmicas, Celestial Ego, Vibranium cai na África nas tribos de wakanda",
+       "branchFrom": 0,
+       "order": 1
+    },
+    {
+        "id":2,
+        "eventType": "commit",
+       "title":"1940 – 1950",
+       "subtitle":"Steve Rogers se torna captão america",
+       "description":"Criação das seis singularidades pelas entidades cosmicas, Celestial Ego, Vibranium cai na África nas tribos de wakanda",
+       "branchFrom": 0,
+       "order": 2
+    },
+    {
+        "id":3,
+        "eventType": "commit",
+       "title":"1951 – 1990",
+       "subtitle":"Many events are set in motion that test the heroes in the future, such as Ego finding Peter Quills mother on Earth, Janet van Dyne disappearing in the Quantum Realm, and Carol Danvers gaining her powers",
+       "description":"Criação das seis singularidades pelas entidades cosmicas, Celestial Ego, Vibranium cai na África nas tribos de wakanda",
+       "branchFrom": 0,
+       "order": 3
+    },
+    {
+        "id":4,
+        "eventType": "commit",
+       "title":"1991 – 2000",
+       "subtitle":"The 90s were a turning point for the stories yet to come of Iron Man, Black Panther, and Captain America. Its also when Carol Danvers becomes Captain Marvel.",
+       "description":"Criação das seis singularidades pelas entidades cosmicas, Celestial Ego, Vibranium cai na África nas tribos de wakanda",
+       "branchFrom": 0,
+       "order": 4
+    },
+    {
+        "id":5,
+        "eventType": "commit",
+       "title":"2001 – 2009",
+       "subtitle":"Tony Stark becomes Iron Man and Bruce Banner becomes the Hulk throughout the mid-to-late 2000s, which prompts the reveal of other heroes.",
+       "description":"Criação das seis singularidades pelas entidades cosmicas, Celestial Ego, Vibranium cai na África nas tribos de wakanda",
+       "branchFrom": 0,
+       "order": 5
+    },
+    {
+        "id":6,
+        "eventType": "commit",
+       "title":"2008 – 2011",
+       "subtitle":"Thor is put through challenges that make him the hero he is today, like his first visit to Earth. Vankos deportation comes back to haunt Tony Stark, as his son becomes the villain Whiplash with a vendetta against the Stark family.",
+       "description":"Criação das seis singularidades pelas entidades cosmicas, Celestial Ego, Vibranium cai na África nas tribos de wakanda",
+       "branchFrom": 0,
+       "order": 6
+    },
+    {
+        "id":7,
+        "eventType": "commit",
+       "title":"2011 – 2012",
+       "subtitle":"The Avengers make their debut and halt an alien invasion led by Loki. The invasion sets in motion many of the events of the present-day MCU. Thanos makes his on-screen debut.",
+       "description":"Criação das seis singularidades pelas entidades cosmicas, Celestial Ego, Vibranium cai na África nas tribos de wakanda",
+       "branchFrom": 0,
+       "order": 7
+    },
+    {
+        "id":8,
+        "eventType": "commit",
+       "title":"2013",
+       "subtitle":"The Reality Stone is put in safe keeping ... for now.",
+       "description":"Criação das seis singularidades pelas entidades cosmicas, Celestial Ego, Vibranium cai na África nas tribos de wakanda",
+       "branchFrom": 0,
+       "order": 8
+    },
+    {
+        "id":9,
+        "eventType": "branch",
+        "color": "#0e482e",
+        "title": "Recuperar joias",
+        "subtitle": "Nova ramificação",
+        "commit":"",
+        "branchFrom": 0,
+        "commitFrom": 1,
+        "order": 2
+    },
+    {
+        "id":10,
+        "eventType": "branch",
+        "color": "#0000FF",
+        "title": "Recuperar joias 2",
+        "subtitle": "Nova ramificação",
+        "commit":"",
+        "branchFrom": 0,
+        "commitFrom": 1,
+        "order": 2
+    },
+    {
+        "id":11,
+        "eventType": "branch",
+        "color": "#9ea100",
+        "title": "Recuperar joias 3",
+        "subtitle": "Nova ramificação",
+        "commit":"",
+        "branchFrom": 0,
+        "commitFrom": 1,
+        "order": 2
+    },
+    {
+        "id":12,
+        "eventType": "branch",
+        "color": "#FF00FF",
+        "title": "Recuperar joias 4",
+        "subtitle": "Nova ramificação",
+        "commit":"",
+        "branchFrom": 0,
+        "commitFrom": 1,
+        "order": 2
+    },
+    {
+        "id":13,
+        "eventType": "commit",
+       "title":"Pegar as joias",
+       "subtitle":"The Reality Stone is put in safe keeping ... for now.",
+       "description":"Criação das seis singularidades pelas entidades cosmicas, Celestial Ego, Vibranium cai na África nas tribos de wakanda",
+       "branchFrom": 10,
+       "order": 3
+    },
+    {
+        "id":14,
+        "eventType": "commit",
+       "title":"Devolver as joias",
+       "subtitle":"The Reality Stone is put in safe keeping ... for now.",
+       "description":"Criação das seis singularidades pelas entidades cosmicas, Celestial Ego, Vibranium cai na África nas tribos de wakanda",
+       "branchFrom": 10,
+       "order": 3
+    },
+    {
+        "id":15,
+        "eventType": "merge",
+       "title":"Juntar na linha do tempo sagrada",
+       "subtitle":"The Reality Stone is put in safe keeping ... for now.",
+       "description":"Criação das seis singularidades pelas entidades cosmicas, Celestial Ego, Vibranium cai na África nas tribos de wakanda",
+       "branchFrom": 10,
+       "order": 9
+    }
+ ]
