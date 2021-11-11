@@ -3,12 +3,13 @@ layout: slides
 title: Workshop Introdução ao GIT
 ---
 layout: true
-<div class="my-header"></div>
- <div class="my-footer"><img src="/assets/img/slides/workshop_git/logo_site_black.png" /><p> Workshop GIT</p></div>
+<div class="my-header"><img src="{{site.url}}{{site.baseurl}}/assets/img/slides/workshop_git/uatu.png" style="width: 50px;;position: absolute;right:0;top:0;"/></div>
+ <div class="my-footer"><img src="{{site.url}}{{site.baseurl}}/assets/img/slides/workshop_git/logos.png" /><p> Workshop GIT</p></div>
 ---
 class: center, middle
 
-.image-75[![Logo do evento CIVICES](/assets/img/slides/workshop_git/CIVECE_LOGO.png)]
+.image-50[![Logo do evento CIVICES]({{site.url}}{{site.baseurl}}/assets/img/site/logos/CIVECES_LOGO.png)]
+.image-50[![Logo do evento COMP WEEK]({{site.url}}{{site.baseurl}}/assets/img/site/logos/compweek.png)]
 
 # Workshop Introdução ao GIT
 <hr />
@@ -19,7 +20,7 @@ petroskilp@gmail.com
 ---
 class: center, middle
 # Introdução
-.image-75[![Vida de Programador Tirinha](/assets/img/slides/workshop_git/GITar.jpg)]
+.image-75[![Vida de Programador Tirinha]({{site.url}}{{site.baseurl}}/assets/img/slides/workshop_git/GITar.jpg)]
 .footnote[fonte: https://vidadeprogramador.com.br/2016/09/22/gitar-hero/]
 
 ---
@@ -31,7 +32,7 @@ name: controle_versao
 ---
 template: controle_versao
 
-.image-75[![Vida de Programador Tirinha](/assets/img/slides/workshop_git/controle_versao.png)]
+.image-75[![Vida de Programador Tirinha]({{site.url}}{{site.baseurl}}/assets/img/slides/workshop_git/controle_versao.png)]
 
 ---
 class: top
@@ -42,7 +43,8 @@ class: top
 - não são .bold[registradas] antes de ser implementadas
 - não são .bold[relatadas] àqueles que precisam saber
 - ou não são .bold[controladas] de forma que melhore a qualidade e reduza erros
-.image-35[![Vida de Programador Tirinha](/assets/img/slides/workshop_git/fight.jpg)]
+.image-35[![Vida de Programador Tirinha]({{site.url}}{{site.baseurl}}/assets/img/slides/workshop_git/fight.jpg)]
+<img style="float: right;" src="{{site.url}}{{site.baseurl}}/assets/img/slides/workshop_git/fight.jpg"/>
 
 ---
 class: top
@@ -53,14 +55,14 @@ class: top
 - Por que mudou? (controle de mudanças)
 - Quem fez a mudança? (auditoria de configuração)
 - Podemos reproduzir esta mudança? (auditoria de configuração)
-.image-15[![Vida de Programador Tirinha](/assets/img/slides/workshop_git/controle_config.png)]
+.image-15[![Vida de Programador Tirinha]({{site.url}}{{site.baseurl}}/assets/img/slides/workshop_git/controle_config.png)]
 ---
 class: top
 # Gerenciamento de Configuração de Software
 
 - Coordenar o desenvolvimento para minimizar a confusão!
 - “Arte de identificar, organizar e controlar modificações no software que está sendo criado, maximizando a produtividade e reduzindo os erros”
-.image-50[![Vida de Programador Tirinha](/assets/img/slides/workshop_git/gk.png)]
+.image-50[![Vida de Programador Tirinha]({{site.url}}{{site.baseurl}}/assets/img/slides/workshop_git/gk.png)]
 
 ---
 class: top
@@ -74,7 +76,7 @@ class: top
 - Relatar as alterações aos outros interessados
 ]
 .right-column[
-.image-100[![Imagem](/assets/img/slides/workshop_git/images.jpg)]
+.image-100[![Imagem]({{site.url}}{{site.baseurl}}/assets/img/slides/workshop_git/images.jpg)]
 ]
 ]
 ---
@@ -86,7 +88,7 @@ class: top
     combinados de acordo com procedimentos específicos de construção
     para servir a uma finalidade particular.
 
-.image-90[![Imagem](/assets/img/slides/workshop_git/config.png)]
+.image-90[![Imagem]({{site.url}}{{site.baseurl}}/assets/img/slides/workshop_git/config.png)]
 ---
 class: top
 # Conceito
@@ -109,12 +111,12 @@ class: top
 - Quando um conjunto de artefatos de
     software se torna um item de configuração?
 
-.image-50[![Imagem](/assets/img/slides/workshop_git/baseline_progression.png)]
+.image-50[![Imagem]({{site.url}}{{site.baseurl}}/assets/img/slides/workshop_git/baseline_progression.png)]
 ---
 class: top
 # Qual a importância do controle de versões?
 
-.image-100[![Imagem](/assets/img/slides/workshop_git/importancia.png)]
+.image-100[![Imagem]({{site.url}}{{site.baseurl}}/assets/img/slides/workshop_git/importancia.png)]
 
 ---
 class: top
@@ -125,7 +127,7 @@ Você precisa editar um site hospedado em um servidor:
 2. Faz as alterações necessárias
 3. Envia os arquivos alterados para o servidor via FTP
 
-.image-75[![Imagem](/assets/img/slides/workshop_git/tirinha1865.png)]
+.image-75[![Imagem]({{site.url}}{{site.baseurl}}/assets/img/slides/workshop_git/tirinha1865.png)]
 .footnote[fonte:
 https://vidadeprogramador.com.br/2018/06/15/ftp/]]
 
@@ -138,7 +140,7 @@ Agora outro desenvolvedor também deve fazer alterações no site\...
 2. Edita e manda para o servidor depois de você
 3. Sobrescreve suas alterações!!!
 
-.image-30[![Imagem](/assets/img/slides/workshop_git/alonso.png)]
+.image-30[![Imagem]({{site.url}}{{site.baseurl}}/assets/img/slides/workshop_git/alonso.png)]
 
 ---
 class: top
@@ -148,7 +150,7 @@ Principais objetivos do Controle de Versões do Sistema
 - Evitar conflitos em alterações
 - Manter versões
 
-.image-50[![Imagem](/assets/img/slides/workshop_git/versioncontrol.jpg)]
+.image-50[![Imagem]({{site.url}}{{site.baseurl}}/assets/img/slides/workshop_git/versioncontrol.jpg)]
 
 ---
 class: top
@@ -185,7 +187,7 @@ todos os desenvolvedores são alertados rapidamente
 class: top
 # Integração Contínua
 
-.image-100[![Imagem](/assets/img/slides/workshop_git/CI-in-devOps.jpg)]
+.image-100[![Imagem]({{site.url}}{{site.baseurl}}/assets/img/slides/workshop_git/CI-in-devOps.jpg)]
 
 ---
 class: top
@@ -212,13 +214,13 @@ O que é Github?
 class: top
 # Algumas empresas que utilizam git
 
-.image-100[![Imagem](/assets/img/slides/workshop_git/usinggit.png)]
+.image-100[![Imagem]({{site.url}}{{site.baseurl}}/assets/img/slides/workshop_git/usinggit.png)]
 
 ---
 class: top
 # Controle de Versões distribuído
 
-.image-50[![Imagem](/assets/img/slides/workshop_git/Distributed-VCS.png)]
+.image-50[![Imagem]({{site.url}}{{site.baseurl}}/assets/img/slides/workshop_git/Distributed-VCS.png)]
 
 ---
 class: top
@@ -233,7 +235,7 @@ class: top
 ---
 class: top
 # 3 Estados do git
-.image-100[![Imagem](/assets/img/slides/workshop_git/areasgit.png)]
+.image-100[![Imagem]({{site.url}}{{site.baseurl}}/assets/img/slides/workshop_git/areasgit.png)]
 
 ---
 class: top
@@ -278,7 +280,7 @@ class: top
 ```bash
 git status
 ```
-.image-75[![Imagem](/assets/img/slides/workshop_git/git_status.png)]
+.image-75[![Imagem]({{site.url}}{{site.baseurl}}/assets/img/slides/workshop_git/git_status.png)]
 
 ---
 class: top
@@ -292,7 +294,7 @@ git add carros.txt
 git add . 
 # o ponto (.) inclui todos os arquivos não rastreados ou modificados
 ```
-.image-55[![Imagem](/assets/img/slides/workshop_git/git_add.png)]
+.image-55[![Imagem]({{site.url}}{{site.baseurl}}/assets/img/slides/workshop_git/git_add.png)]
 
 ---
 class: top
@@ -302,7 +304,7 @@ class: top
 ```bash
 git commit -m "Adicionando as linguagens de programação que lembrei agora"
 ```
-.image-55[![Imagem](/assets/img/slides/workshop_git/git_commit.png)]
+.image-55[![Imagem]({{site.url}}{{site.baseurl}}/assets/img/slides/workshop_git/git_commit.png)]
 
 ---
 class: top
@@ -318,7 +320,7 @@ git show <commit>
 ```
 - Commit deve ser especificado pela chave
 
-.image-50[![Imagem](/assets/img/slides/workshop_git/git_log.png)]
+.image-50[![Imagem]({{site.url}}{{site.baseurl}}/assets/img/slides/workshop_git/git_log.png)]
 
 ---
 class: top
@@ -334,7 +336,7 @@ Para listar as branches do nosso repositório, devemos executar o comando:
 ```bash
 git branch
 ```
-.image-50[![Imagem](/assets/img/slides/workshop_git/git_branch.png)]
+.image-50[![Imagem]({{site.url}}{{site.baseurl}}/assets/img/slides/workshop_git/git_branch.png)]
 
 ---
 class: top
@@ -380,7 +382,7 @@ git branch --no-merged
 ```
 - Temos uma branch com modificações em relação a branch master!
 
-.image-55[![Imagem](/assets/img/slides/workshop_git/git_merged.png)]
+.image-55[![Imagem]({{site.url}}{{site.baseurl}}/assets/img/slides/workshop_git/git_merged.png)]
 
 ---
 class: top
@@ -388,12 +390,12 @@ class: top
 # Mesclar branch
 .left-column[
 branch master
-.image-100[![Imagem](/assets/img/slides/workshop_git/ling_master.png)]
+.image-100[![Imagem]({{site.url}}{{site.baseurl}}/assets/img/slides/workshop_git/ling_master.png)]
 ]
 
 .right-column[
 branch branch_ordenado
-.image-100[![Imagem](/assets/img/slides/workshop_git/ling_branc_ordenado.png)]
+.image-100[![Imagem]({{site.url}}{{site.baseurl}}/assets/img/slides/workshop_git/ling_branc_ordenado.png)]
 ]
 - Queremos mesclar a branch master com a branch_ordenado
 - O que vai acontecer?
@@ -406,7 +408,7 @@ class: top
 ```bash
 git merge branch_ordenado -m "Mesclando com a branch_ordenado"
 ```
-.image-100[![Imagem](/assets/img/slides/workshop_git/merge_conflit.png)]
+.image-100[![Imagem]({{site.url}}{{site.baseurl}}/assets/img/slides/workshop_git/merge_conflit.png)]
 
 ---
 class: top
@@ -417,7 +419,7 @@ class: top
 - Ou até mesmo as duas ao mesmo tempo
 - Ou uma terceira versão que você rescrever
 
-.image-50[![Imagem](/assets/img/slides/workshop_git/git_conflitos_resolver.png)]
+.image-50[![Imagem]({{site.url}}{{site.baseurl}}/assets/img/slides/workshop_git/git_conflitos_resolver.png)]
 
 ---
 class: top
@@ -429,7 +431,7 @@ git add .
 git commit -m "mensagem"
 ```
 
-.image-50[![Imagem](/assets/img/slides/workshop_git/git_both_modified.png)]
+.image-50[![Imagem]({{site.url}}{{site.baseurl}}/assets/img/slides/workshop_git/git_both_modified.png)]
 
 ---
 class: top
@@ -450,11 +452,11 @@ class: top
 .container[
 # Visualizando Logs
 .left-column[
-git log .image-100[![Imagem](/assets/img/slides/workshop_git/git_log2.png)]
+git log .image-100[![Imagem]({{site.url}}{{site.baseurl}}/assets/img/slides/workshop_git/git_log2.png)]
 ]
 .right-column[
 git log - -graph - -oneline 
-.image-100[![Imagem](/assets/img/slides/workshop_git/git_log_graph.png)]
+.image-100[![Imagem]({{site.url}}{{site.baseurl}}/assets/img/slides/workshop_git/git_log_graph.png)]
 ]
 ]
 
@@ -465,7 +467,7 @@ class: top
 ```bash
 git diff d7c7547
 ```
-.image-50[![Imagem](/assets/img/slides/workshop_git/git_diff.png)]
+.image-50[![Imagem]({{site.url}}{{site.baseurl}}/assets/img/slides/workshop_git/git_diff.png)]
 ]
 
 ---
@@ -473,7 +475,7 @@ class: top
 .container[
 # Trabalho em equipe
 
-.image-100[![Imagem](/assets/img/slides/workshop_git/tirinha1713.png)]
+.image-100[![Imagem]({{site.url}}{{site.baseurl}}/assets/img/slides/workshop_git/tirinha1713.png)]
 .footnote[fonte:
 <https://vidadeprogramador.com.br/2017/07/19/mensagem-do-commit/>]
 ]
@@ -503,7 +505,7 @@ class: top
 ```bash
 git remote add origin <$URL>
 ```
-.image-50[![Imagem](/assets/img/slides/workshop_git/github-logo.png)]
+.image-50[![Imagem]({{site.url}}{{site.baseurl}}/assets/img/slides/workshop_git/github-logo.png)]
 
 ---
 class: top
@@ -517,7 +519,7 @@ git push <$remote> <$branch>
 ```bash  
 git push orgin master
 ```
-.image-25[![Imagem](/assets/img/slides/workshop_git/push_bw_p.png)]
+.image-25[![Imagem]({{site.url}}{{site.baseurl}}/assets/img/slides/workshop_git/push_bw_p.png)]
 
 ---
 class: top
@@ -532,7 +534,7 @@ git pull
 git pull <$remote> <$branch>
 ```
 
-.image-25[![Imagem](/assets/img/slides/workshop_git/pull.jpg)]
+.image-25[![Imagem]({{site.url}}{{site.baseurl}}/assets/img/slides/workshop_git/pull.jpg)]
 
 ---
 class: top
@@ -545,25 +547,25 @@ class: top
 git clone <$URL>
 ```
 
-.image-50[![Imagem](/assets/img/slides/workshop_git/oclone.jpg)]
+.image-50[![Imagem]({{site.url}}{{site.baseurl}}/assets/img/slides/workshop_git/oclone.jpg)]
 
 ---
 class: top
 # Criar uma conta no github
 
-.image-100[![Imagem](/assets/img/slides/workshop_git/creategithub.png)]
+.image-100[![Imagem]({{site.url}}{{site.baseurl}}/assets/img/slides/workshop_git/creategithub.png)]
 
 ---
 class: top
 # Criar um repositório
 
-.image-100[![Imagem](/assets/img/slides/workshop_git/criar_repo.png)]
+.image-100[![Imagem]({{site.url}}{{site.baseurl}}/assets/img/slides/workshop_git/criar_repo.png)]
 
 ---
 class: top
 # Utilizando o repositório
 
-.image-75[![Imagem](/assets/img/slides/workshop_git/git_repo_vazio.png)]
+.image-75[![Imagem]({{site.url}}{{site.baseurl}}/assets/img/slides/workshop_git/git_repo_vazio.png)]
 
 ---
 class: top
@@ -572,7 +574,7 @@ class: top
 - git remote add $<$repository name> <$url>
 - git push $<$repository name$>$ $<$branch name$>$
 ```
-.image-50[![Imagem](/assets/img/slides/workshop_git/git_add_remote.png)]
+.image-50[![Imagem]({{site.url}}{{site.baseurl}}/assets/img/slides/workshop_git/git_add_remote.png)]
 
 ---
 class: top
@@ -586,7 +588,7 @@ git clone <$url>
 ```bash
 git remote -v
 ```
-.image-50[![Imagem](/assets/img/slides/workshop_git/git_clone.png)]
+.image-50[![Imagem]({{site.url}}{{site.baseurl}}/assets/img/slides/workshop_git/git_clone.png)]
 
 ---
 class: top
@@ -596,23 +598,23 @@ class: top
 ```bash
 git tag <$tagname>
 ```
-.image-100[![Imagem](/assets/img/slides/workshop_git/git_tag.png)]
+.image-100[![Imagem]({{site.url}}{{site.baseurl}}/assets/img/slides/workshop_git/git_tag.png)]
 
 ---
 class: top
 # tagging
 
-.image-100[![Imagem](/assets/img/slides/workshop_git/github_tag.png)]
+.image-100[![Imagem]({{site.url}}{{site.baseurl}}/assets/img/slides/workshop_git/github_tag.png)]
 ---
 class: top
 # forking
 
-.image-100[![Imagem](/assets/img/slides/workshop_git/forking.png)]
+.image-100[![Imagem]({{site.url}}{{site.baseurl}}/assets/img/slides/workshop_git/forking.png)]
 ---
 class: top
 # forking
 
-.image-100[![Imagem](/assets/img/slides/workshop_git/forks.png)]
+.image-100[![Imagem]({{site.url}}{{site.baseurl}}/assets/img/slides/workshop_git/forks.png)]
 ---
 class: top
 # Outras funcionalidades do github
@@ -628,36 +630,36 @@ class: top
 class: top
 # readme.md
 
-.image-100[![Imagem](/assets/img/slides/workshop_git/readmegit.png)]
+.image-100[![Imagem]({{site.url}}{{site.baseurl}}/assets/img/slides/workshop_git/readmegit.png)]
 
 ---
 class: top
 # Wiki
 
-.image-100[![Imagem](/assets/img/slides/workshop_git/wiki.png)]
+.image-100[![Imagem]({{site.url}}{{site.baseurl}}/assets/img/slides/workshop_git/wiki.png)]
 
 ---
 class: top
 # WebDiff
 
-.image-100[![Imagem](/assets/img/slides/workshop_git/web_diff.png)]
+.image-100[![Imagem]({{site.url}}{{site.baseurl}}/assets/img/slides/workshop_git/web_diff.png)]
 
 ---
 class: top
 # Pull Request
 
-.image-100[![Imagem](/assets/img/slides/workshop_git/pullrequest.png)]
+.image-100[![Imagem]({{site.url}}{{site.baseurl}}/assets/img/slides/workshop_git/pullrequest.png)]
 ---
 class: top
 # Pull Request
 
-.image-100[![Imagem](/assets/img/slides/workshop_git/pull-request-flow.png)]
+.image-100[![Imagem]({{site.url}}{{site.baseurl}}/assets/img/slides/workshop_git/pull-request-flow.png)]
 
 ---
 class: top
 # Issue Tracking
 
-.image-100[![Imagem](/assets/img/slides/workshop_git/issue.png)]
+.image-100[![Imagem]({{site.url}}{{site.baseurl}}/assets/img/slides/workshop_git/issue.png)]
 ---
 class: top
 # Prática 01
@@ -722,4 +724,4 @@ Livros
 ---
 class: top
 # Perguntas
-.image-100[![Imagem](/assets/img/slides/workshop_git/duvidas.png)]
+.image-100[![Imagem]({{site.url}}{{site.baseurl}}/assets/img/slides/workshop_git/duvidas.png)]

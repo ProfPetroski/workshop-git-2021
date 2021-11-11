@@ -6,18 +6,19 @@ layout: base
 
 
   <!-- Load the JS file -->
-  <script src="https://cdn.jsdelivr.net/npm/@gitgraph/js"></script>
+  <!--<script src="https://cdn.jsdelivr.net/npm/@gitgraph/js"></script>-->
+  <script src="{{ 'assets/js/gitgraph.js' | relative_url }}"></script>
     <div class=" container-md ">
   {{ content }}
 
-  <button class="btn btn-success btn-lg get-started-btn" onclick="next()">Próximo evento</button>
+  <button class="btn btn-warning btn-lg get-started-btn" onclick="proccess(-1)">Evento anterior</button><button class="btn btn-success btn-lg get-started-btn" onclick="proccess(1)">Próximo evento</button>
   <p class="box-note"><strong>Evento Nexus:</strong> <span id="evento-span"></span></p>
   <div id="graph-container"></div>
 </div>
   <!-- Use the `GitgraphJS` global variable to create your graph -->
   <script>
 
-  var branchesOrder = ['Recuperar joias 4', 'Recuperar joias 2', 'Linha do tempo sagrada', 'Recuperar joias', 'Recuperar joias 3'];
+  var branchesOrder = ['Thanos sequestra Nebulosa', 'Recuperar a Joia do PODER', 'Roubo da Joia da MENTE', 'Roubo da Joia do ESPAÇO', 'Linha do tempo sagrada', 'Recuperar a Joia do TEMPO', 'Recuperar A Joia da REALIDADE', 'Recuperar a Joia da ALMA'];
       var compareBranchesOrder = function(a, b) {
         return branchesOrder.indexOf(a) - branchesOrder.indexOf(b);
       };
@@ -30,41 +31,21 @@ layout: base
         const gitgraph = GitgraphJS.createGitgraph(graphContainer, {
             author: 'Uatu <uatu@marvel.com>',
             compareBranchesOrder: compareBranchesOrder,
+            displayHash: false,
         });
-    //gitgraph.author("Teste");
-
-    // Simulate git commands with Gitgraph API.
-    //const master = gitgraph.branch("master");
     
-    //master.commit("Initial commit", "Teste");
-
-    //const develop = master.branch("develop");
-    //develop.commit("Add TypeScript");
-    
-    //const aFeature = develop.branch("a-feature");
-    //aFeature
-      //.commit("Make it work")
-      //.commit("Make it right")
-      //.commit("Make it fast");
-
-    //develop.merge(aFeature);
-    //develop.commit("Prepare v1");
-    //master.merge(develop).tag("v1.0.0");
     var events = JSON.parse('{{ site.data.events | jsonify }}');
-    //console.log(events);
     events[0].b = gitgraph.branch(events[0].title);
-    count++;
     function build(id){
         if(events[id].eventType=='commit'){
             events[events[id].branchFrom].b.commit({
-                subject: events[id].title
+                subject: events[id].title,
+                message:{displayHash: false},
             });
         }
         else if(events[id].eventType=='branch'){
-            console.log(events[id]);
             events[id].b = events[events[id].branchFrom].b.branch({
                 name: events[id].title,
-                parentCommit: events[events[id].commitFrom].c,
                 style: {
                     color: events[id].color
                 },
@@ -80,12 +61,20 @@ layout: base
                     }
                 }
             });
-            console.log(events[events[id].commitFrom].c);
             events[id].b.commit('Nova ramificação');
         }
         else if(events[id].eventType=='merge'){
             events[id].b = events[0].b.merge(events[events[id].branchFrom].b);
-            events[0].b.commit('Ramo podado');
+            events[0].b.commit({
+                subject: 'Ramo podado',
+                type: "mergeCommit",
+                });
+        }
+        else if(events[id].eventType=='committag'){
+            events[events[id].branchFrom].b.commit({
+                subject: events[id].title,
+                message:{displayHash: false},
+            }).tag(events[id].tag);
         }
     }
     function compare( a, b ) {
@@ -97,11 +86,11 @@ layout: base
   }
   return 0;
 }
-console.log(events);
-function next() {
-    if(count<=events.length){
-        console.log(count);
-        eventoSpan.innerHTML=events[count].subtitle;
+function proccess(valor) {
+    if(count<=events.length+1&&count+valor>0){
+        count=count+valor;
+    }
+        eventoSpan.innerHTML=events[count].title+": "+events[count].subtitle;
         subarray = events.slice(1, count+1);
         subarray.sort(compare);
         // Get the graph container HTML element.
@@ -123,15 +112,13 @@ function next() {
                 }
             }
         });
-        events[0].b.commit('Origem');
+        events[0].b.commit({
+            subject: 'Origem',
+            messageHashDisplay: false,
+        });
         subarray.forEach(function(valor, chave){
             build(valor.id);
         });
-        
-        count++;
-    }
-   
-   
+
 }
-    
   </script>
