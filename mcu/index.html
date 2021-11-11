@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Beautiful Jekyll 5.0.0 | Copyright Dean Attali 2020 -->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  
+
+  
+
+  <title>MCU branch</title>
+
+  
+
+  <meta name="description" content="">
+
+  
+
+  
+
+  
+  <link rel="alternate" type="application/rss+xml" title="Workshop GIT" href="https://profpetroski.github.io/workshop-git-2021/feed.xml">
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+    
+      
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+    
+      
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+
+
+    
+      
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
+
+
+    
+      
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
+
+
+    
+  
+
+  
+    
+      <link rel="stylesheet" href="/workshop-git-2021/assets/css/bootstrap-social.css">
+    
+      <link rel="stylesheet" href="/workshop-git-2021/assets/css/beautifuljekyll.css">
+    
+  
+
+  
+
+  
+  
+  
+
+  
+
+  
+  <meta property="og:site_name" content="Workshop GIT">
+  <meta property="og:title" content="MCU branch">
+  <meta property="og:description" content="">
+
+  
+  <meta property="og:image" content="https://profpetroski.github.io/workshop-git-2021/assets/img/site/logos/git.png">
+  
+
+  
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://profpetroski.github.io/workshop-git-2021/mcu/">
+  <link rel="canonical" href="https://profpetroski.github.io/workshop-git-2021/mcu/">
+  
+
+  
+  <meta name="twitter:card" content="summary">
+  
+  <meta name="twitter:site" content="@">
+  <meta name="twitter:creator" content="@">
+
+  <meta property="twitter:title" content="MCU branch">
+  <meta property="twitter:description" content="">
+
+  
+  <meta name="twitter:image" content="https://profpetroski.github.io/workshop-git-2021/assets/img/site/logos/git.png">
+  
+
+  
+
+
+  
+
+  
+
+</head>
+
+
+<body>
+
+  
+
+
+  <nav class="navbar navbar-expand-xl navbar-light fixed-top navbar-custom top-nav-regular"><a class="navbar-brand" href="https://profpetroski.github.io/workshop-git-2021/">Workshop GIT</a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="main-navbar">
+    <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/workshop-git-2021/about">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/workshop-git-2021/contribuir">Quero contribuir</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Páginas</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="/workshop-git-2021/listaapresentacoes">Apresentações</a>
+            </div>
+          </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" id="nav-search-link" href="#" title="Search">
+            <span id="nav-search-icon" class="fa fa-search"></span>
+            <span id="nav-search-text">Search</span>
+          </a>
+        </li></ul>
+  </div>
+
+  
+
+  
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        <a href="https://profpetroski.github.io/workshop-git-2021/">
+          <img alt="Navigation bar avatar" class="avatar-img" src="/workshop-git-2021/assets/img/site/logos/git.png" />
+        </a>
+      </div>
+    </div>
+  
+
+</nav>
+
+
+
+<div id="beautifuljekyll-search-overlay">
+
+  <div id="nav-search-exit" title="Exit search">✕</div>
+  <input type="text" id="nav-search-input" placeholder="Search">
+  <ul id="search-results-container"></ul>
+  
+  <script src="https://unpkg.com/simple-jekyll-search@latest/dest/simple-jekyll-search.min.js"></script>
+  <script>
+    var searchjson = '[ \
+       \
+        { \
+          "title"    : "Welcome to Jekyll!", \
+          "category" : "", \
+          "url"      : "/workshop-git-2021/2021-11-09-welcome-to-jekyll/", \
+          "date"     : "November  9, 2021" \
+        }, \
+       \
+       \
+        { \
+          "title"    : "", \
+          "category" : "page", \
+          "url"      : "/workshop-git-2021/404.html", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "About", \
+          "category" : "page", \
+          "url"      : "/workshop-git-2021/about/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "", \
+          "category" : "page", \
+          "url"      : "/workshop-git-2021/about/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "Workshop Introdução ao GIT", \
+          "category" : "page", \
+          "url"      : "/workshop-git-2021/whatif/branch/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "Quero contribuir com este blog", \
+          "category" : "page", \
+          "url"      : "/workshop-git-2021/contribuir/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "Workshop", \
+          "category" : "page", \
+          "url"      : "/workshop-git-2021/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "Lista de Apresentações", \
+          "category" : "page", \
+          "url"      : "/workshop-git-2021/listaapresentacoes/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "MCU branch", \
+          "category" : "page", \
+          "url"      : "/workshop-git-2021/mcu/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "Tag Index", \
+          "category" : "page", \
+          "url"      : "/workshop-git-2021/tags/", \
+          "date"     : "January 1, 1970" \
+        } \
+       \
+    ]';
+    searchjson = JSON.parse(searchjson);
+
+    var sjs = SimpleJekyllSearch({
+      searchInput: document.getElementById('nav-search-input'),
+      resultsContainer: document.getElementById('search-results-container'),
+      json: searchjson
+    });
+  </script>
+</div>
+
+
+
+
+
+  <!-- TODO this file has become a mess, refactor it -->
+
+
+
+
+
+
+
+<header class="header-section ">
+
+<div class="intro-header no-img">
+  <div class="container-md">
+    <div class="row">
+      <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
+        <div class="page-heading">
+          <h1>MCU branch</h1>
+          
+
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</header>
+
+
+
+
+
+
+  <!-- Load the JS file -->
+  <!--<script src="https://cdn.jsdelivr.net/npm/@gitgraph/js"></script>-->
+  <script src="/workshop-git-2021/assets/js/gitgraph.js"></script>
+    <div class=" container-md ">
+  
+
+
+  <button class="btn btn-warning btn-lg get-started-btn" onclick="proccess(-1)">Evento anterior</button><button class="btn btn-success btn-lg get-started-btn" onclick="proccess(1)">Próximo evento</button>
+  <p class="box-note"><strong>Evento Nexus:</strong> <span id="evento-span"></span></p>
+  <div id="graph-container"></div>
+</div>
+  <!-- Use the `GitgraphJS` global variable to create your graph -->
+  <script>
+
+  var branchesOrder = ['Thanos sequestra Nebulosa', 'Recuperar a Joia do PODER', 'Roubo da Joia da MENTE', 'Roubo da Joia do ESPAÇO', 'Linha do tempo sagrada', 'Recuperar a Joia do TEMPO', 'Recuperar A Joia da REALIDADE', 'Recuperar a Joia da ALMA'];
+      var compareBranchesOrder = function(a, b) {
+        return branchesOrder.indexOf(a) - branchesOrder.indexOf(b);
+      };
+  var count = 0;
+  
+    const graphContainer = document.getElementById("graph-container");
+    const eventoSpan = document.getElementById("evento-span");
+
+        // Instantiate the graph.
+        const gitgraph = GitgraphJS.createGitgraph(graphContainer, {
+            author: 'Uatu <uatu@marvel.com>',
+            compareBranchesOrder: compareBranchesOrder,
+            displayHash: false,
+        });
+    
+    var events = JSON.parse('[{"id":0,"eventType":"branch","color":"#FF0000","title":"Linha do tempo sagrada","subtitle":"Nova ramificação","commit":"","branchFrom":null,"order":0},{"id":1,"eventType":"commit","title":"Big Bang -> 1939: Jóias do infinito e Vibraniun","subtitle":"Surgimento das Joias do infinito, Vibraniun na Terra","description":"","branchFrom":0,"order":1},{"id":2,"eventType":"commit","title":"1942 * Capitão América: O Primeiro Vingador","subtitle":"Durante a Segunda Guerra Mundial. Acontece a criação do super-soldado, bem como sua primeira batalha com Hydra e seu líder Red Skull. Também apresenta o Tesseract, uma das joias poderosas que controlam a realidade.","description":"","branchFrom":0,"order":2},{"id":3,"eventType":"commit","title":"1960 -> 1990 * Eventos importantes ","subtitle":"Anton Vanko e Stark trabalhan na tecnologia do reator arc. Ego vem para a terra. Hank Pym inventa o trage de encolher e o dispositivo de comunicação com formigas e Janet se perde no Reino Quantico. Quill é levado por Yondu. Carol Denvers ganha seus poderes e perde sua memória.","description":"","branchFrom":0,"order":3},{"id":4,"eventType":"commit","title":"1995 * Capitã Marvel ","subtitle":"Capitã Marvel cai na Terra e começar uma caça aos alienígenas Skrull que mudam de forma","description":"","branchFrom":0,"order":4},{"id":5,"eventType":"commit","title":"2010 * Homem de Ferro","subtitle":"Gênio / inventor / filantropo / playboy Tony Stark é capturado por uma organização terrorista, cujo líder quer o mais recente sistema de armas desenhado por Stark. No entanto, Stark projeta algo ainda mais poderoso para se ajudar a escapar: o primeiro traje do Homem de Ferro.","description":"","branchFrom":0,"order":5},{"id":6,"eventType":"commit","title":"2011 * Homem de Ferro 2","subtitle":"Tony Stark lutando para revelar sua identidade de Homem de Ferro. O governo quer a tecnologia por trás de seu terno, e quando Stark se recusa a entregá-lo, outro fabricante de armas mostra que está disposto a fazer qualquer coisa para colocar as mãos nele.","description":"","branchFrom":0,"order":6},{"id":7,"eventType":"commit","title":"2011 * O Incrível Hulk","subtitle":"Bruce Banner foge do General Thunderbolt Ross e do Exército dos EUA. Percebendo que não pode esperar controlar ou conter o Hulk, Ross decide criar sua própria versão do Hulk usando outro soldado, mas ele rapidamente perde o controle.","description":"","branchFrom":0,"order":7},{"id":8,"eventType":"commit","title":"2011 * Thor","subtitle":"O Deus do Trovão foi banido de Asgard para a Terra por seu pai Odin, tudo graças à malandragem de Loki. A fim de recuperar seus poderes e controlar seu martelo, Thor, retratado por Chris Hemsworth, deve provar que é digno. Ele conhece uma cientista da Terra, que pode ajudá-lo a acertar as coisas antes que Loki assuma o controle total de Asgard.","description":"","branchFrom":0,"order":8},{"id":9,"eventType":"commit","title":"2012 * Os Vingadores","subtitle":"O poder combinado de Loki, o Tesseract e uma horda de alienígenas invadindo a cidade de Nova York provou ser a combinação que fez necessário a junção e combinação de poderes na linha de frente.","description":"","branchFrom":0,"order":9},{"id":10,"eventType":"commit","title":"2012 * Homem de Ferro 3","subtitle":" Tony Stark está lidando com as memórias da batalha que ocorreu (e quase o matou). As memórias o levam a construir um exército de trajes do Homem de Ferro para que ele esteja sempre preparado.","description":"","branchFrom":0,"order":10},{"id":11,"eventType":"commit","title":"2013 * Thor: Mundo sombrio","subtitle":" Tony Stark está lidando com as memórias da batalha que ocorreu (e quase o matou). As memórias o levam a construir um exército de trajes do Homem de Ferro para que ele esteja sempre preparado.","description":"","branchFrom":0,"order":11},{"id":12,"eventType":"commit","title":"2014 * Capitão América: O Soldado Invernal","subtitle":"O Capitão América tem trabalhado para Shield, desde os eventos de Os Vingadores, mas ele se pega questionando os motivos da organização enquanto aprende mais sobre seus planos. Além disso, seu amigo mais próximo retorna dos mortos e se torna um adversário, o Soldado Invernal.","description":"","branchFrom":0,"order":12},{"id":13,"eventType":"commit","title":"2014 * Guardiões da Galáxia","subtitle":"Peter Quill encontra uma Pedra do Infinito escondida nas ruínas de um mundo alienígena. Ele forma um grupo com um guaxinim falante, Groot, a árvore falante, e outros. Juntos, eles devem impedir Ronan, o Acusador, de empunhar a Pedra do Infinito.","description":"","branchFrom":0,"order":13},{"id":14,"eventType":"commit","title":"2014 * Guardians of the Galaxy Vol 2","subtitle":"Peter Quill está se apaixonando cada vez mais por Gamora, de Zoe Saldana. E ele é forçado a enfrentar os mistérios de seu passado quando fica cara a cara com uma entidade divina conhecida como Ego.","description":"","branchFrom":0,"order":14},{"id":15,"eventType":"commit","title":"2015 * Vingadores, a era de Ultron","subtitle":"Os Vingadores se reúnem para enfrentar um erro criado por Tony Stark e Bruce Banner: A Inteligência Artificial conhecida como Ultron.","description":"","branchFrom":0,"order":15},{"id":16,"eventType":"commit","title":"2015 * Homem-Formiga","subtitle":"O Homem-Formiga recrutado por Hank Pym a fim de impedir que a tecnologia se torne uma arma. O ex-prodígio de Pym recriou a tecnologia, e o Homem-Formiga deve lutar contra ele e, finalmente, salvar o dia na menor escala imaginável.","description":"","branchFrom":0,"order":16},{"id":17,"eventType":"commit","title":"2016 * Capitão América: Guerra Civil","subtitle":"Embora seja um filme do Capitão América, Guerra Civil apresenta quase todos os Vingadores, acrescentando mais dois pesos pesados à programação: Pantera Negra e Homem-Aranha. Infelizmente, os Vingadores estão divididos em dois lados devido ao Capitão América querer salvar seu amigo Bucky Barnes, que parece ser o responsável pelo bombardeio de uma sessão da ONU.","description":"","branchFrom":0,"order":17},{"id":18,"eventType":"commit","title":"2016 * Homem-Aranha: De volta ao lar","subtitle":"O cabeça de teia faz sua estréia solo aqui, onde ele enfrenta Michael Keatons Vulture, um capataz de construção que se tornou um negociante de armas no mercado negro após recuperar a tecnologia da batalha de Nova York no primeiro filme dos Vingadores. Além de tudo isso, Peter Parker também está lidando com todos os problemas usuais que surgem em ser um calouro no ensino médio.","description":"","branchFrom":0,"order":18},{"id":19,"eventType":"commit","title":"2017 * Doutor Estranho","subtitle":"Stephen Strange, é um cirurgião de classe mundial, e ele sabe disso. Estranho é insuportável para quase todo mundo que tem que lidar com ele até que um trágico acidente tire o uso de suas mãos. Strange então viaja pelo mundo em busca de uma cura que lhe dê de volta o uso de suas mãos - e ele encontra uma resposta, na forma de alguma magia antiga.","description":"","branchFrom":0,"order":19},{"id":20,"eventType":"commit","title":"2017 * Pantera Negra","subtitle":"Após o bombardeio da ONU no Capitão América: A Guerra Civil, TChalla deve voltar para casa em Wakanda e ser nomeado rei. Uma vez lá, ele é confrontado com a contínua política de isolamento que ajudou a proteger Wakanda. Ele também enfrenta um erro do passado de seu pai na forma de Eric Killmonger.","description":"","branchFrom":0,"order":20},{"id":21,"eventType":"commit","title":"2017 * Thor: Ragnarok","subtitle":"O terceiro filme solo de Thor mostra o herói lançado no espaço após a morte de seu pai e a destruição de seu martelo por sua irmã há muito perdida, Hella. Ele se encontra preso em lutas de gladiadores contra o Hulk, que não tinha sido visto desde que os Vingadores derrotaram Ultron. Juntos, Thor e Hulk se unem a Loki e a Valquíria para enfrentar Hella.","description":"","branchFrom":0,"order":21},{"id":22,"eventType":"commit","title":"2017 * Homem formiga e a Vespa","subtitle":"Scott Lang está de volta, mas ele foi colocado em prisão domiciliar após seu papel na Guerra Civil e se aliar ao Capitão América. Ele está afastado de Hank Pym e da filha de Pym, Hope. Mas ele relutantemente concorda em ajudá-los, pensando que Pym pode ser capaz de resgatar a mãe de Hope do Reino Quântico.","description":"","branchFrom":0,"order":22},{"id":23,"eventType":"committag","tag":"snap","title":"2018 * Vingadores: Guerra do Infinito","subtitle":"Depois de anos orquestrando coisas nos bastidores para encontrar todas as Pedras do Infinito, Thanos decidiu ir buscá-las ele mesmo. A única coisa que está em seu caminho são os Vingadores, que atualmente estão espalhados por todo o universo. Para aumentar ainda mais as apostas, a única razão de Thanos para buscar o poder das pedras é destruir metade de toda a vida no universo.","description":"","branchFrom":0,"order":23},{"id":24,"eventType":"commit","title":"2023 * Vingadores: Ultimato","subtitle":"Depois que Thanos tirou metade de toda a vida, deixando o universo em um caos total, os Vingadores devem tentar consertar as coisas. Cinco anos se passam e uma pequena chance surge para eles desfazerem tudo, mas antes que isso possa acontecer, o Capitão América e Tony Stark precisam fazer as pazes e reunir os Vingadores uma última vez.","description":"","branchFrom":0,"order":24},{"id":25,"eventType":"branch","color":"#0e482e","title":"Recuperar a Joia do PODER","subtitle":"Maquina de combate e nebulosa voltam para 2014 para recuperar a jóia do PODER. Nebulosa foi sequestrada e substituída por seu eu do passado","commit":"","branchFrom":0,"order":13},{"id":26,"eventType":"branch","color":"#0000FF","title":"Recuperar a Joia da ALMA","subtitle":"Viúva negra e Gavião Arqueir voltam para Volmir em 2014. Viúva Negra se sacrifica para conquistar a Joia da ALMA","commit":"","branchFrom":0,"order":13},{"id":27,"eventType":"branch","color":"#9ea100","title":"Recuperar A Joia da REALIDADE","subtitle":"Thor e Rocket Raccoon voltarem até Asgard de 2013, onde planejariam extrair a Joia da Realidade de Jane Foster.","commit":"","branchFrom":0,"order":11},{"id":28,"eventType":"branch","color":"#FF00FF","title":"Recuperar a Joia do TEMPO","subtitle":"Bruce Banner (Hulk) volta para 2012 (Vingadores). A Anciã, inicialmente, negou a entrega da joia, citando que os Mestres das Artes Místicas precisariam da Joia do Tempo para se defenderem no futuro. Porém, após Bruce revelar que Strange entregou o artefato ao Thanos, a Anciã percebeu que Stephen apenas faria isto por uma razão, e então entregou a Joia para Banner.","commit":"","branchFrom":0,"order":9},{"id":29,"eventType":"branch","color":"#4b4d66","title":"Roubo da Joia da MENTE","subtitle":"Homem de Ferro, Homem Formiga e Capitão América voltam para 2012 (Vingadores). Chegando em 2012, os Vingadores foram até a Torre Stark, momentos após a derrota de Loki. Enquanto os Vingadores de 2012 apreendiam Loki, agentes da STRIKE. Capitão América seguiu os agentes para roubar a Joia da Mente","description":"","branchFrom":0,"order":9},{"id":30,"eventType":"branch","color":"#783565","title":"Roubo da Joia do ESPAÇO","subtitle":"Chegando em 1970, Tony Stark e Steve Rogers deduziram onde o Tesseract estava sendo mantido e foram até lá para pegá-lo. Em um elevador, Stark, passando-se por um doutor, saiu em um andar para recuperar o Tesseract, enquanto Rogers, passando-se por um soldado, ficou no elevador, aguardando seu andar para pegar mais Partículas Pym.","description":"","branchFrom":0,"order":3},{"id":31,"eventType":"branch","color":"#ed613f","title":"Thanos sequestra Nebulosa","subtitle":"Thanos sequestra Nebulosa do futuro e descobre os planos e com as particulas Pym da cabeça da Nebulosa viaja para o futuro","description":"","branchFrom":0,"order":13},{"id":32,"eventType":"merge","title":"Thanos viaja para o 2023 para o Ultimato!","subtitle":"Thanos viaja para o 2023 para o Ultimato!","description":"","branchFrom":31,"order":32},{"id":33,"eventType":"committag","tag":"blip","title":"Bruce baner estala os dedos","subtitle":"O Blip ocorreu quando Bruce Banner utilizou a Manopla do Infinito, criado por Tony Stark. Após Hulk estalar seus dedos, os efeitos da Dizimação de Thanos foram revertidos, com a metade da população, que havia sido morta, ressuscitando.","description":"","branchFrom":0,"order":33},{"id":34,"eventType":"commit","title":"Homem de Ferro rouba as Joias do Infinito de Thanos","subtitle":"Thanos tenta novamente o estalo, mas falha e percebe que o Homem de Ferro roubou as joias do inifino que por sua vez estala o dedo e elimina o Titã louco, porém morrendo no processo também.","description":"","branchFrom":0,"order":34},{"id":35,"eventType":"merge","title":"Capitão américa devolve a Jóia da ALMA","subtitle":"Capitão américa devolve a Jóia da ALMA","description":"","branchFrom":26,"order":32},{"id":36,"eventType":"merge","title":"Capitão américa devolve a Jóia do PODER","subtitle":"Capitão américa devolve a Jóia do PODER","description":"","branchFrom":25,"order":36},{"id":37,"eventType":"merge","title":"Capitão américa devolve a Jóia da REALIDADE","subtitle":"Capitão américa devolve a Jóia da REALIDADE","description":"","branchFrom":27,"order":37},{"id":38,"eventType":"merge","title":"Capitão américa devolve a Jóia da MENTE","subtitle":"Capitão américa devolve a Jóia da MENTE","description":"","branchFrom":29,"order":38},{"id":39,"eventType":"merge","title":"Capitão américa devolve a Jóia do TEMPO","subtitle":"Capitão américa devolve a Jóia do TEMPO","description":"","branchFrom":28,"order":39},{"id":40,"eventType":"merge","title":"Capitão américa devolve a Jóia do ESPAÇO","subtitle":"Capitão américa devolve a Jóia do ESPAÇO","description":"","branchFrom":30,"order":40},{"id":41,"eventType":"branch","color":"#ed613f","title":"Captão América volta para Peggy Carter","subtitle":"Capitão América volta para o passado para ficar com Peggy Carter","description":"","branchFrom":0,"order":2},{"id":42,"eventType":"merge","title":"Capitão América Entrega escudo para Falcão","subtitle":"O Capitão América (Chris Evans) decidiu passar o seu escudo ao Falcão","description":"","branchFrom":41,"order":42}]');
+    events[0].b = gitgraph.branch(events[0].title);
+    function build(id){
+        if(events[id].eventType=='commit'){
+            events[events[id].branchFrom].b.commit({
+                subject: events[id].title,
+                message:{displayHash: false},
+            });
+        }
+        else if(events[id].eventType=='branch'){
+            events[id].b = events[events[id].branchFrom].b.branch({
+                name: events[id].title,
+                style: {
+                    color: events[id].color
+                },
+                commitDefaultOptions: {
+                    style: {
+                        color: events[id].color,
+                    message: {
+                        color: events[id].color
+                    },
+                    dot: {
+                        color: events[id].color
+                    }
+                    }
+                }
+            });
+            events[id].b.commit('Nova ramificação');
+        }
+        else if(events[id].eventType=='merge'){
+            events[id].b = events[0].b.merge(events[events[id].branchFrom].b);
+            events[0].b.commit({
+                subject: 'Ramo podado',
+                type: "mergeCommit",
+                });
+        }
+        else if(events[id].eventType=='committag'){
+            events[events[id].branchFrom].b.commit({
+                subject: events[id].title,
+                message:{displayHash: false},
+            }).tag(events[id].tag);
+        }
+    }
+    function compare( a, b ) {
+  if ( a.order < b.order ){
+    return -1;
+  }
+  if ( a.order > b.order ){
+    return 1;
+  }
+  return 0;
+}
+function proccess(valor) {
+    if(count<=events.length+1&&count+valor>0){
+        count=count+valor;
+    }
+        eventoSpan.innerHTML=events[count].title+": "+events[count].subtitle;
+        subarray = events.slice(1, count+1);
+        subarray.sort(compare);
+        // Get the graph container HTML element.
+        gitgraph.clear();
+        events[0].b = gitgraph.branch({
+            name: events[0].title,
+            style: {
+                color: events[0].color
+            },
+            commitDefaultOptions: {
+                style: {
+                    color: events[0].color,
+                message: {
+                    color: events[0].color
+                },
+                dot: {
+                    color: events[0].color
+                }
+                }
+            }
+        });
+        events[0].b.commit({
+            subject: 'Origem',
+            messageHashDisplay: false,
+        });
+        subarray.forEach(function(valor, chave){
+            build(valor.id);
+        });
+
+}
+  </script>
+
+
+  <footer>
+  <div class="container-md beautiful-jekyll-footer">
+    <div class="row">
+      <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
+      <ul class="list-inline text-center footer-links"><li class="list-inline-item">
+    <a href="mailto:petroskilp@gmail.com" title="Email me">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">Email me</span>
+   </a>
+  </li><li class="list-inline-item">
+    <a href="https://github.com/petroskilp" title="GitHub">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">GitHub</span>
+   </a>
+  </li><li class="list-inline-item">
+    <a href="https://linkedin.com/in/petroskilp" title="LinkedIn">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">LinkedIn</span>
+   </a>
+  </li></ul>
+
+      
+      <p class="copyright text-muted">
+      
+      2021
+
+      
+        &nbsp;&bull;&nbsp;
+        <span class="author-site">
+          <a href="https://profpetroski.github.io/workshop-git-2021">profpetroski.github.io/workshop-git-2021/</a>
+        </span>
+      
+
+      
+      </p>
+      <p class="theme-by text-muted">
+        Powered by
+        <a href="https://beautifuljekyll.com">Beautiful Jekyll</a>
+      </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  
+  
+    
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+
+
+  
+    
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+
+  
+    
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+  
+
+
+
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+      <script src="/workshop-git-2021/assets/js/beautifuljekyll.js"></script>
+    
+  
+
+
+
+
+
+
+
+
+
+</body>
+</html>
